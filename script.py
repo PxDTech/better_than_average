@@ -7,3 +7,12 @@
 # Note:
 # Your points are not included in the array of your class's points. For calculating the average point you may # add your point to the given array!
 
+def better_than_average(class_points, your_points):
+    if your_points > ((sum(class_points) + your_points) / (len(class_points) + 1)):
+        return True
+    else:
+        return False
+
+
+
+print(better_than_average([29, 55, 74, 60, 11, 90, 67, 28], 21))
